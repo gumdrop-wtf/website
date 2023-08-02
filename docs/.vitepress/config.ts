@@ -2,27 +2,50 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Gumdrop 🍭",
+  title: "Gumdrop",
   description:
     "Gumdrop is a tool for web3 builders, teams and organizations to distribute Non-Transferable Badges to reward, recognize and incentivize humans",
   lastUpdated: false,
   lang: "en-US",
   cleanUrls: true,
-  head: [
-
-  ],
+  head: [],
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    logo: "/logo.png",
     nav: [
       { text: "Documentation", link: "https://docs.otterspace.xyz" },
-      // { text: "Blog", link: "https://mirror.otterspace.xyz" },
+      // { text: "Blog", link: "/blog/" },
+      // {
+      //   text: 'Blog',
+      //   items: [
+      //     {
+      //       text: 'Blog Home',
+      //       link: '/blog/',
+      //       activeMatch: '/blog/$',
+      //     },
+      //     {
+      //       text: 'Tags',
+      //       link: '/blog/tags',
+      //       activeMatch: '/blog/tags',
+      //     },
+      //     {
+      //       text: 'Archives',
+      //       link: '/blog/archives',
+      //       activeMatch: '/blog/archives',
+      //     },
+      // {
+      //   text: 'RSS Feed',
+      //   link: '/blog/feed.rss',
+      // },
+      // ],
+      // }
     ],
 
     // sidebar: [
     //   {
     //     text: "Examples",
     //     items: [
-    //       { text: "Markdown Examples", link: "/markdown-examples" },
+    //       { text: "Markdown Examples", link: "/blog/one" },
     //       { text: "Runtime API Examples", link: "/api-examples" },
     //     ],
     //   },
